@@ -1,5 +1,7 @@
-** Study Design
+# Code Book For Getting & Cleansing Data Assignment
 
-*** Summary choices
+## Study Design
 
-** Code Book
+### Summary choices
+
+## Code Book
