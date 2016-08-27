@@ -21,3 +21,12 @@ To read the output into R again the following commands can be used.
 data <- read.table("outputData.txt", header = TRUE) 
 View(data)
 
+## Contents of this directory
+
+Excluding this readme the below explains the purposes of the other files in this directory.
+
+1. run_analysis.R - This contains the repeatable function that can be run on the raw data to generate the cleansed data file as described in the section above.
+2. Codebook.MD - This contains the rational for the decisions made in implemention the script as well as a description of all of the variables contained in the initial data and those in the cleansed data.
+3. OutputData.txt - This is an example of the output form running the run_analysis.R script on the data obtained on the 21st of August 2016.
+
+
