@@ -33,6 +33,7 @@ View(data)
 ```
 
 ## Cleansing Process
+
 1. First the features file is loaded. This list of names is then stripped of the "(", ")", "-" and "," characters. These are replaced with the "_" character to make the names more readable. Then makeN.names is used to make the colum names unique.
 2. The run_analysis function contains a separate function this it uses internally to process the two different files, test and train. This is run on both folders.
   1. The three data files are loaded (x, y and subject) and the colum names from step one ore applied to the x data set.
@@ -44,8 +45,9 @@ View(data)
 
 ## Resulting columns
 The following is a list of the columns in the resulting data set.
-1. "subject_id" - Contains in integer identifier for a subject.
-2. "activity" - Contains a textual description of the activity being performed.
+
+1. subject_id - Contains in integer identifier for a subject.
+2. activity - Contains a textual description of the activity being performed.
 
 The Remaining Rows are the mean of the original rows that were selected in the cleansing process. Descriptions of the original data set can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
