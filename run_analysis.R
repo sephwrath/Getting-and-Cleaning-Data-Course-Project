@@ -5,7 +5,7 @@ run_analysis <- function () {
       
       ## make sue we have all the libs we will need
       packageLoad <- function(x) {
-            if (!require(x,character.only = T)) {            
+            if (!require(x,character.only = T)) {
                   install.packages(x,dep=T)
                   if(!require(x,character.only = T)) stop(Paste("Package", x, "couldn't be loaded"))
             }
@@ -61,9 +61,10 @@ run_analysis <- function () {
       ## use the function above to get the tidied data for each item and join them here
       completeSet <- bind_rows(extractDataSet("test"), extractDataSet("train"))
 
-      View(completeSet)
+      ## View(completeSet)
       
       ## 5. From the data set in step 4, creates a second, independent tidy data set with
       ## the average of each variable for each activity and each subject.
-      summary <- group_by(completeSet, subject_id, activity) %>% summarise_each(funs(mean))
+      summary <- group_by(completeSet, subject_id, activity) %>% summarise_each(funs(mean)) %>% 
+            arrange(subject_id, activity)
 }
