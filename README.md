@@ -13,17 +13,17 @@ The script doesn't support any arguments and the two packages (data.table and dp
 
 Below is an example of how to run the script and obtain the cleansed data file.
 
-''''
+```
 data<-run_analysis()
 write.table(data, "outputData.txt")
-''''
+```
 
 To read the output into R again the following commands can be used.
 
-''''
+```
 data <- read.table("outputData.txt", header = TRUE) 
 View(data)
-''''
+```
 
 ## Contents of this directory
 
